@@ -9,7 +9,7 @@ description: Merge completed Linear issue work when the user invokes /merge-and-
 
 1. Resolve the Linear issue from `$ARGUMENTS`, current branch name, or session context. If resolution is ambiguous or missing, ask for one issue key and stop until provided.
 2. Read the Linear issue and list every acceptance criterion with its done state.
-3. Require every acceptance criterion to be marked done in Linear. If any criterion is not marked done or its state is unclear, stop before merging and report the unchecked criteria.
+3. Require every acceptance criterion to be marked done in Linear. If any criterion is not marked done or its state is unclear, stop before merging, report the unchecked criteria, and suggest running `/review-implementation $ARGUMENTS`.
 4. Run `yarn run compile`. Stop before merging if it fails.
 5. Determine merge target: parent task branch when the Linear issue has a parent task, otherwise `master`. If the parent task branch cannot be resolved, ask for the branch name and stop until provided.
 6. Inspect git status and diff. Stop before merging if unrelated user changes would be included.
@@ -28,4 +28,5 @@ description: Merge completed Linear issue work when the user invokes /merge-and-
 ## Rules
 
 - Do not run `/code-review`.
+- Do not modify acceptance criteria.
 - Do not infer acceptance-criterion completion from code, tests, or review evidence; use the done state in Linear.
