@@ -1,9 +1,9 @@
 ---
-name: merge-and-close
-description: Merge completed Linear issue work when the user invokes /merge-and-close or asks to merge and close an issue.
+name: commit-and-close
+description: Merge completed Linear issue work when the user invokes /commit-and-close or asks to commit and close an issue.
 ---
 
-# Merge And Close
+# Commit And Close
 
 ## Workflow
 
