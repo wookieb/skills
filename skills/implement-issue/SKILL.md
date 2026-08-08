@@ -6,7 +6,7 @@ disable-model-invocation: true
 
 Implement the work described by the user in the spec or tickets.
 
-Before changing code, resolve the Linear issue and move it to `implementing` status. If that status does not exist, ask before choosing another status.
+Before changing code, resolve the Linear issue, read its first comment to understand the change scope, then move it to `implementing` status.
 
 Use /tdd where possible, at pre-agreed seams.
 
