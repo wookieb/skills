@@ -16,10 +16,18 @@ description: Show every acceptance criterion and status for the current Linear i
 ## Output
 
 - Issue identifier and title.
-- One row per acceptance criterion.
-- `Criterion`: exact acceptance-criterion text.
-- `Status`: `✅ satisfied` or `❌ unsatisfied`.
-- `Explanation`: required for every `❌ unsatisfied` criterion. Include criterion intent, implementation status, test status, and reason it remains unsatisfied.
+- One section per acceptance criterion. Use this format:
+
+```md
+# <criterion>
+<status>
+
+<explanation>
+```
+
+- `<criterion>`: exact acceptance-criterion text.
+- `<status>`: `✅ satisfied` or `❌ unsatisfied`.
+- `<explanation>`: required for every `❌ unsatisfied` criterion. Include criterion intent, implementation status, test status, and reason it remains unsatisfied.
 
 ## Rules
 
