@@ -2,6 +2,8 @@
 
 Use this repository as a source catalog for the `skills` npm package.
 
+Only modify skills under this repository's `skills/` directory. Do not modify global skills, including files under `~/.agents/skills/`.
+
 ## Source Layout
 
 Store shared skills under `skills/<skill-name>/SKILL.md`:
