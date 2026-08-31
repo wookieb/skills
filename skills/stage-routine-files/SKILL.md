@@ -6,8 +6,6 @@ disable-model-invocation: true
 
 # Stage Routine Files
 
-Use only when the user invokes `/stage-routine-files` after work is complete.
-
 ## Input
 
 - Files changed by this agent during the current work.
