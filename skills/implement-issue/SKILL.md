@@ -6,7 +6,7 @@ disable-model-invocation: true
 
 Implement the work described by the user in the spec or tickets.
 
-Before changing code, resolve the Linear issue, read its first comment to understand the change scope, then move it to `implementing` status.
+Before changing code, resolve the Linear issue. Read the issue and its comments. Read every parent issue and every parent comment. Treat every parent `## Grilling outcome` as implementation and codebase-design context. Then move the issue to `implementing` status.
 
 Use /tdd where possible, at pre-agreed seams.
 
