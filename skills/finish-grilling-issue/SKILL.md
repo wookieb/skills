@@ -7,7 +7,7 @@ description: Finish a Linear issue grilling session when the user invokes /finis
 
 ## Workflow
 
-1. Resolve the Linear issue from `$ARGUMENTS`, current branch name, or session context. If resolution is ambiguous or missing, ask for one issue key and stop until provided.
+1. Resolve the Linear issue from `$ARGUMENTS` or session context. If resolution is ambiguous or missing, ask for one issue key and stop until provided.
 2. Check every question, challenge, or follow-up from the grilling session. If any are unanswered, stop and report what still needs an answer.
 3. Run `/grilling-outcome $ARGUMENTS`, preserving `$ARGUMENTS` exactly. Do not continue until it confirms the single current outcome comment.
 4. Inspect git status. If any files changed during the grilling session, commit only those grilling-session changes and push the commit.

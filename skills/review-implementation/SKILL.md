@@ -7,7 +7,7 @@ description: Review implementation for a Linear issue when the user invokes /rev
 
 ## Workflow
 
-1. Resolve the Linear issue from `$ARGUMENTS`, current branch name, or session context. If resolution is ambiguous or missing, ask for one issue key and stop until provided.
+1. Resolve the Linear issue from `$ARGUMENTS` or session context. If resolution is ambiguous or missing, ask for one issue key and stop until provided.
 2. Read the Linear issue, every parent issue, and their comments. Extract every `## Grilling outcome` comment as implementation and design context.
 3. Select the review target. If `$ARGUMENTS` contains a commit point, run `/code-review $ARGUMENTS`, preserving `$ARGUMENTS` exactly. If no commit point is provided, review the current working tree: staged and unstaged changes against `HEAD`, plus every untracked file.
 4. For a working-tree review, apply the same Standards and Spec review axes as `/code-review`. Use the Linear issue and parent grilling outcomes as spec sources.

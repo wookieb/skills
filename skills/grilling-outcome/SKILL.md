@@ -7,7 +7,7 @@ description: Maintain the single `Grilling outcome` Linear comment for an issue 
 
 ## Workflow
 
-1. Resolve the Linear issue from `$ARGUMENTS`, current branch name, or session context. If resolution is ambiguous or missing, ask for one issue key and stop until provided.
+1. Resolve the Linear issue from `$ARGUMENTS` or session context. If resolution is ambiguous or missing, ask for one issue key and stop until provided.
 2. Synthesize every answered grilling question, decision, constraint, open risk, and follow-up into the current outcome. Do not include unanswered questions.
 3. Capture every code snippet discussed during grilling that defines or changes an interface, class, type, or other codebase-design decision. Keep each snippet in a fenced code block. Preserve its language and essential signatures.
 4. Include a `## Grilling outcome` section. Include `## Codebase design` when grilling established codebase-design content, such as module depth, interface, class, type, seam, adapter, leverage, locality, or a design decision about them. Put every captured code snippet in this section.

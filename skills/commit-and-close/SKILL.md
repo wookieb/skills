@@ -7,7 +7,7 @@ description: Commit completed Linear issue work when the user invokes /commit-an
 
 ## Workflow
 
-1. Resolve the Linear issue from `$ARGUMENTS`, current branch name, or session context. If resolution is ambiguous or missing, ask for one issue key and stop until provided.
+1. Resolve the Linear issue from `$ARGUMENTS` or session context. If resolution is ambiguous or missing, ask for one issue key and stop until provided.
 2. Read the Linear issue and list every acceptance criterion with its done state.
 3. Require every acceptance criterion to be marked done in Linear. If any criterion is not marked done or its state is unclear, stop before committing, report the unchecked criteria, and suggest running `/review-implementation $ARGUMENTS`.
 4. Run `yarn install`. Stop before committing if the command fails.

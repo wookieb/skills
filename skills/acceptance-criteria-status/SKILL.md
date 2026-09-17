@@ -7,7 +7,7 @@ description: Show every acceptance criterion and status for the current Linear i
 
 ## Workflow
 
-1. Resolve the Linear issue from `$ARGUMENTS`, current branch name, or session context. If resolution is ambiguous or missing, ask for one issue key and stop until provided.
+1. Resolve the Linear issue from `$ARGUMENTS` or session context. If resolution is ambiguous or missing, ask for one issue key and stop until provided.
 2. Read the Linear issue, its comments, and every acceptance criterion with its done state.
 3. Report every criterion with status `✅ satisfied` when its Linear checkbox is done. Report status `❌ unsatisfied` when its checkbox is not done.
 4. For each unsatisfied criterion, inspect the issue, its comments, current code, and relevant tests. Explain what the criterion requires, current implementation status, test status, and why it remains unsatisfied. State when evidence is missing or conflicting.
